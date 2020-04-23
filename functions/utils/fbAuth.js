@@ -1,8 +1,7 @@
-const { admin, db } = require('./admin');
+const { admin } = require('./admin');
 
 module.exports = (req, res, next) => {
   let idToken;
-  console.log(req.headers)
   if (
     req.headers.authorization &&
     req.headers.authorization.startsWith('Bearer ')
